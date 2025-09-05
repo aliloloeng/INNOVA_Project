@@ -1,1 +1,0 @@
-import{_ as e}from"./TicketsComponent-sYaV1fob.js";import{c as a,o as t,b as c}from"./index-Bis4XyvM.js";const m={__name:"MyTicketPage",setup(o){return(r,_)=>(t(),a("div",null,[c(e)]))}};export{m as default};
