@@ -1,0 +1,275 @@
+{
+  "support_center": "Support Center",
+  "profile": "Profil",
+  "home": "Startseite",
+  "machines": "Maschinen",
+  "about": "Über uns",
+  "my_ticket": "Mein Ticket",
+  "my_order": "Meine Bestellung",
+  "my_report": "Mein Bericht",
+  "message_admin": "Nachricht an Admin",
+  "active": "Aktiv",
+  "inactive": "Inaktiv",
+  "member_since": "Mitglied seit",
+  "forgot_password": "Passwort vergessen?",
+  "redirect_forgot_password": "Weiterleitung zur Seite Passwort vergessen...",
+  "tickets": {
+    "title": "Tickets",
+    "sort": "Sortieren",
+    "ticket": "Ticket",
+    "updated": "Aktualisiert",
+    "filters": {
+      "all": "Alle Tickets",
+      "open": "Offen",
+      "closed": "Geschlossen",
+      "inProgress": "In Bearbeitung"
+    }
+  },
+  "orders": {
+    "title": "Bestellungen",
+    "sort": "Sortieren",
+    "order": "Bestellung",
+    "updated": "Aktualisiert",
+    "filters": {
+      "all": "Alle Bestellungen",
+      "open": "Offen",
+      "closed": "Geschlossen",
+      "inProgress": "In Bearbeitung"
+    },
+    "status": {
+      "open": "Offen",
+      "closed": "Geschlossen",
+      "inProgress": "In Bearbeitung"
+    }
+  },
+  "company_name": "Tech Corp",
+  "status": {
+    "maintenance": "Wartung",
+    "active": "Aktiv",
+    "inactive": "Inaktiv"
+  },
+  "job": {
+    "Developer": "Entwickler"
+  },
+  "industryApp": {
+    "title": "IndustryPro App",
+    "description": "Ihre komplette industrielle Managementlösung. Maschinen verfolgen, Berichte verwalten, Ersatzteile bestellen und mit Ihrem Team verbunden bleiben – alles in einer leistungsstarken mobilen App.",
+    "support": "Support",
+    "companies": "Unternehmen",
+    "uptime": "Betriebszeit"
+  },
+   "recent_activities": "Letzte Aktivitäten",
+  "show_less": "Weniger anzeigen",
+  "see_all": "Alle anzeigen",
+  "activities": {
+    "maintenance_report": "Wartungsbericht #2846",
+    "cnc_machine_floor": "CNC-Maschine - Etage 2",
+    "completed": "Abgeschlossen",
+    "parts_order": "Teilebestellung #1254",
+    "hydraulic_pump_replacement": "Hydraulikpumpen-Austausch",
+    "in_progress": "In Bearbeitung",
+    "issue_report": "Fehlerbericht #3412",
+    "assembly_line_b_urgent": "Montagelinie B - Dringend",
+    "pending": "Ausstehend",
+    "2h_ago": "vor 2 Stunden",
+    "yesterday": "Gestern",
+    "2_days_ago": "vor 2 Tagen"
+  },
+  "parts_shop": "Teile-Shop",
+  "search_parts": "Teile suchen...",
+  "out_of_stock": "Nicht auf Lager",
+  "low_stock": "Wenig auf Lager",
+  "in_stock": "Auf Lager",
+  "qty": "Menge",
+  "products": {
+    "Hydraulic Pump HP-200": "Hydraulikpumpe HP-200",
+    "Hydraulic System": "Hydrauliksystem",
+    "Electrical Motor Em-150": "Elektromotor Em-150",
+    "Electrical Component": "Elektrische Bauteile",
+    "Ball Bearing BB-45": "Kugellager BB-45",
+    "Mechanical Part": "Mechanisches Teil",
+    "Oil Filter OF-30": "Ölfilter OF-30",
+    "Filter System": "Filtersystem",
+    "Pressure Valve PV-80": "Druckventil PV-80",
+    "Power Cable PC-100": "Stromkabel PC-100"
+  },
+  "machines_search_description": "Suchen oder scannen Sie den QR-Code, um Maschinen zu finden",
+  "search_machine_placeholder": "Maschine nach Name suchen...",
+  "scan_qr_code": "QR-Code scannen",
+  "recent_machines": "Letzte Maschinen",
+  "new_report_header": {
+  "new_report": "Neuer Bericht",
+  "company_name": "TechCrap Industries",
+  "save": "Speichern"
+  },
+  "machines_activities": {
+    "maintenance_report": "Wartungsbericht #2846",
+    "cnc_machine_floor": "CNC-Maschine - Etage 2",
+    "parts_order": "Teilebestellung #1254",
+    "hydraulic_pump_replacement": "Hydraulikpumpen-Austausch",
+    "issue_report": "Fehlerbericht #3412",
+    "assembly_line_b_urgent": "Montagelinie B - Dringend",
+    "active": "Aktiv",
+    "maintenance": "Wartung"
+  },
+  "draft_mode": {
+    "title": "Entwurfsmodus aktiv",
+    "description": "Sie können mit dem Ausfüllen dieses Berichts beginnen und später zurückkehren, um ihn zu vervollständigen. Bitte beachten Sie: Einsendungen werden vom Admin-Team überwacht."
+  },
+  "report_nav": {
+    "inspection": "Inspektionsbericht",
+    "services": "Servicebericht"
+  },
+  "select_date": "Datum auswählen",
+  "basic_info": {
+    "title": "Basisinformationen",
+    "topic": "Thema",
+    "topic_placeholder": "Berichtsthema eingeben",
+    "type": "Typ",
+    "type_placeholder": "Typ auswählen",
+    "types": {
+      "incident": "Vorfall",
+      "maintenance": "Wartung",
+      "inspection": "Inspektion"
+    },
+    "status": "Status",
+    "status_placeholder": "Status auswählen",
+    "statuses": {
+      "open": "Offen",
+      "in_progress": "In Bearbeitung",
+      "closed": "Geschlossen"
+    }
+  },
+  "action_details": {
+    "title": "Aktionsdetails",
+    "enter_picture": "Bild eingeben",
+    "picture_entry": "Bildeingabe",
+    "enter_picture_manually": "Bild manuell eingeben",
+    "send": "Senden",
+    "day_of_week": "Wochentag",
+    "select_day": "Wählen Sie einen Tag...",
+    "days": {
+      "saturday": "Samstag",
+      "sunday": "Sonntag",
+      "monday": "Montag",
+      "tuesday": "Dienstag",
+      "wednesday": "Mittwoch",
+      "thursday": "Donnerstag",
+      "friday": "Freitag"
+    },
+    "article_description": "Artikelbeschreibung",
+    "article": "Artikel",
+    "quantity_hours": "Menge/Std./Stunden:",
+    "select_hour": "Stunde auswählen",
+    "duration": "Dauer",
+    "from": "Von",
+    "until": "Bis",
+    "status": "Status",
+    "select_status": "Auswählen...",
+    "statuses": {
+      "ok": "OK",
+      "not_ok": "Nicht OK",
+      "pending": "Ausstehend"
+    },
+    "remove_action": "Diese Aktion entfernen",
+    "add_new_action": "Neue Aktion hinzufügen"
+  },
+  "checklist": "Checkliste",
+  "your_input": "Ihre Eingabe",
+  "your_input_placeholder": "Schreiben Sie etwas...",
+  "send_to_ai": "An KI senden",
+  "ai_result": "KI-Ergebnis",
+  "item": "Punkt",
+  "enter_item": "Punkt eingeben...",
+  "add_item": "Punkt hinzufügen",
+  "fallback_checklist": [
+    "Motorölstand prüfen",
+    "Zündkerzen prüfen",
+    "Luftfilter prüfen",
+    "Zahnriemen untersuchen",
+    "Kühlmittelstand prüfen",
+    "Batterie und Anschlüsse prüfen",
+    "Kraftstoffsystem testen",
+    "Bremsen und Flüssigkeiten prüfen",
+    "Auspuffanlage prüfen",
+    "Professionelle Diagnose planen"
+  ],
+  "checklist_submitted_alert": "Checkliste übermittelt:\n",
+  "customer_information": "Kundeninformation",
+  "full_name": "Vollständiger Name",
+  "full_name_placeholder": "Kundenname",
+  "national_id": "Personalausweisnummer",
+  "national_id_placeholder": "Personalausweisnummer",
+  "email": "E-Mail",
+  "email_placeholder": "Kunde@email",
+  "phone": "Telefon",
+  "phone_placeholder": "+1 234 567 89",
+  "address": "Adresse",
+  "address_placeholder": "Kundenadresse",
+  "customer_info_submitted_alert": "Kundeninformation übermittelt:\n",
+  "phone_invalid": "Telefonnummer ist ungültig",
+  "phone_required": "Telefon ist erforderlich",
+  "company_info": {
+    "title": "Firmeninformationen",
+    "name": "Firmenname",
+    "select_company": "Firma auswählen",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "companies": {
+      "TechCrap Industries": "TechCrap Industries",
+      "MegaCorp Solutions": "MegaCorp Solutions",
+      "AlphaBeta Co.": "AlphaBeta Co.",
+      "FutureWorks Ltd.": "FutureWorks Ltd.",
+      "GammaTech LLC": "GammaTech LLC"
+    }
+  },
+  "engineer_info": {
+    "title": "Ingenieursinformationen",
+    "name": "Ingenieurname",
+    "national_id": "Personalausweisnummer",
+    "placeholders": {
+      "name": "John Doe",
+      "national_id": "Personalausweisnummer"
+    }
+  },
+  "spare_parts": {
+    "title": "Ersatzteile",
+    "part_name": "Teilname",
+    "quantity": "Menge",
+    "status": "Status",
+    "placeholders": {
+      "part_name": "Teilname",
+      "quantity": "Menge eingeben",
+      "select_status": "Status auswählen"
+    },
+    "options": {
+      "available": "Verfügbar",
+      "not_available": "Nicht verfügbar",
+      "ordered": "Bestellt"
+    }
+  },
+  "rating": {
+    "title": "Bewertung",
+    "label": "Diesen Service bewerten :",
+    "error": "Bewertung erforderlich"
+  },
+  "signatures": {
+    "title": "Unterschriften",
+    "customer": "Unterschrift des Kunden",
+    "engineer": "Unterschrift des Ingenieurs"
+  },
+  "reportPage": {
+    "submitButton": "Bericht einreichen"
+  },
+  "my_orders": "Meine Bestellungen",
+  "menu": "Menü",
+  "total_order": "Gesamtbestellungen",
+  "completed": "Abgeschlossen",
+  "in_progress": "In Bearbeitung",
+  "recent_order": "Letzte Bestellung",
+  "order": "Bestellung",
+  "placed_at": "Bestellt am",
+  "type": "Typ",
+  "view_details": "Details ansehen",
+  "cancel_order": "Bestellung stornieren"
+}

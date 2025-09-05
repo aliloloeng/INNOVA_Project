@@ -1,0 +1,276 @@
+{
+  "support_center": "Centro di supporto",
+  "profile": "Profilo",
+  "home": "Home",
+  "machines": "Macchine",
+  "about": "Chi siamo",
+  "my_ticket": "Il mio biglietto",
+  "my_order": "Il mio ordine",
+  "my_report": "Il mio rapporto",
+  "message_admin": "Messaggio all'amministratore",
+  "active": "Attivo",
+  "inactive": "Inattivo",
+  "member_since": "Membro da",
+  "forgot_password": "Hai dimenticato la password?",
+  "redirect_forgot_password": "Reindirizzamento alla pagina Password dimenticata...",
+  "tickets": {
+    "title": "Biglietti",
+    "sort": "Ordina",
+    "ticket": "Biglietto",
+    "updated": "Aggiornato",
+    "filters": {
+      "all": "Tutti i biglietti",
+      "open": "Aperti",
+      "closed": "Chiusi",
+      "inProgress": "In corso"
+    }
+  },
+  "orders": {
+    "title": "Ordini",
+    "sort": "Ordina",
+    "order": "Ordine",
+    "updated": "Aggiornato",
+    "filters": {
+      "all": "Tutti gli ordini",
+      "open": "Aperti",
+      "closed": "Chiusi",
+      "inProgress": "In corso"
+    },
+    "status": {
+      "open": "Aperto",
+      "closed": "Chiuso",
+      "inProgress": "In corso"
+    }
+  },
+  "company_name": "Tech Corp",
+  "status": {
+    "maintenance": "Manutenzione",
+    "active": "Attivo",
+    "inactive": "Inattivo"
+  },
+  "job": {
+    "Developer": "Sviluppatore"
+  },
+  "industryApp": {
+    "title": "IndustryPro App",
+    "description": "La tua soluzione completa per la gestione industriale. Monitora le macchine, gestisci i rapporti, ordina i pezzi di ricambio e resta connesso con il tuo team – tutto in un'unica potente app mobile.",
+    "support": "Supporto",
+    "companies": "Aziende",
+    "uptime": "Tempo di attività"
+  },
+  "recent_activities": "Attività Recenti",
+  "show_less": "Mostra meno",
+  "see_all": "Vedi tutto",
+  "activities": {
+    "maintenance_report": "Rapporto di manutenzione #2846",
+    "cnc_machine_floor": "Macchina CNC - Piano 2",
+    "completed": "Completato",
+    "parts_order": "Ordine di pezzi #1254",
+    "hydraulic_pump_replacement": "Sostituzione pompa idraulica",
+    "in_progress": "In corso",
+    "issue_report": "Rapporto problemi #3412",
+    "assembly_line_b_urgent": "Linea di assemblaggio B - Urgente",
+    "pending": "In sospeso",
+    "2h_ago": "2 ore fa",
+    "yesterday": "Ieri",
+    "2_days_ago": "2 giorni fa"
+  },
+  "parts_shop": "Negozio di Ricambi",
+  "search_parts": "Cerca ricambi...",
+  "out_of_stock": "Esaurito",
+  "low_stock": "Scorte basse",
+  "in_stock": "Disponibile",
+  "qty": "Quantità",
+  "products": {
+    "Hydraulic Pump HP-200": "Pompa idraulica HP-200",
+    "Hydraulic System": "Sistema idraulico",
+    "Electrical Motor Em-150": "Motore elettrico Em-150",
+    "Electrical Component": "Componente elettrico",
+    "Ball Bearing BB-45": "Cuscinetto a sfere BB-45",
+    "Mechanical Part": "Parte meccanica",
+    "Oil Filter OF-30": "Filtro olio OF-30",
+    "Filter System": "Sistema di filtraggio",
+    "Pressure Valve PV-80": "Valvola di pressione PV-80",
+    "Power Cable PC-100": "Cavo di alimentazione PC-100"
+  },
+  "machines_search_description": "Cerca o scansiona il codice QR per trovare le macchine",
+  "search_machine_placeholder": "Cerca macchina per nome...",
+  "scan_qr_code": "Scansiona codice QR",
+  "recent_machines": "Macchine Recenti",
+  "new_report_header": {
+  "new_report": "Nuovo Report",
+  "company_name": "TechCrap Industries",
+  "save": "Salva"
+},
+"machines_activities": {
+  "maintenance_report": "Rapporto di manutenzione #2846",
+  "cnc_machine_floor": "Macchina CNC - Piano 2",
+  "parts_order": "Ordine di pezzi #1254",
+  "hydraulic_pump_replacement": "Sostituzione pompa idraulica",
+  "issue_report": "Rapporto problemi #3412",
+  "assembly_line_b_urgent": "Linea di assemblaggio B - Urgente",
+  "active": "Attivo",
+  "maintenance": "Manutenzione"
+  },
+"draft_mode": {
+    "title": "Modalità bozza attiva",
+    "description": "Puoi iniziare a compilare questo report e tornare più tardi per completarlo. Nota: le sottomissioni sono monitorate dal team di amministrazione."
+  },
+  "report_nav": {
+    "inspection": "Rapporto di ispezione",
+    "services": "Rapporto sui servizi"
+  },
+   "select_date": "Seleziona la data",
+   "basic_info": {
+    "title": "Informazioni di base",
+    "topic": "Argomento",
+    "topic_placeholder": "Inserisci l'argomento del report",
+    "type": "Tipo",
+    "type_placeholder": "Seleziona tipo",
+    "types": {
+      "incident": "Incidente",
+      "maintenance": "Manutenzione",
+      "inspection": "Ispezione"
+    },
+    "status": "Stato",
+    "status_placeholder": "Seleziona stato",
+    "statuses": {
+      "open": "Aperto",
+      "in_progress": "In corso",
+      "closed": "Chiuso"
+    }
+  },
+  "action_details": {
+    "title": "Dettagli Azione",
+    "enter_picture": "Inserisci immagine",
+    "picture_entry": "Inserimento immagine",
+    "enter_picture_manually": "Inserisci immagine manualmente",
+    "send": "Invia",
+    "day_of_week": "Giorno della settimana",
+    "select_day": "Seleziona un giorno...",
+    "days": {
+      "saturday": "Sabato",
+      "sunday": "Domenica",
+      "monday": "Lunedì",
+      "tuesday": "Martedì",
+      "wednesday": "Mercoledì",
+      "thursday": "Giovedì",
+      "friday": "Venerdì"
+    },
+    "article_description": "Descrizione dell'articolo",
+    "article": "Articolo",
+    "quantity_hours": "Quantità/Ore:",
+    "select_hour": "Seleziona ora",
+    "duration": "Durata",
+    "from": "Da",
+    "until": "Fino a",
+    "status": "Stato",
+    "select_status": "Seleziona...",
+    "statuses": {
+      "ok": "OK",
+      "not_ok": "Non OK",
+      "pending": "In sospeso"
+    },
+    "remove_action": "Rimuovi questa azione",
+    "add_new_action": "Aggiungi nuova azione"
+  },
+  "checklist": "Lista di controllo",
+  "your_input": "Il tuo input",
+  "your_input_placeholder": "Scrivi qualcosa...",
+  "send_to_ai": "Invia all'IA",
+  "ai_result": "Risultato IA",
+  "item": "Voce",
+  "enter_item": "Inserisci voce...",
+  "add_item": "Aggiungi voce",
+  "fallback_checklist": [
+    "Controllare il livello dell'olio motore",
+    "Controllare le candele",
+    "Controllare il filtro dell'aria",
+    "Esaminare la cinghia di distribuzione",
+    "Controllare il livello del liquido refrigerante",
+    "Controllare batteria e collegamenti",
+    "Testare il sistema di alimentazione",
+    "Controllare freni e fluidi",
+    "Controllare il sistema di scarico",
+    "Programmare una diagnosi professionale"
+  ],
+  "checklist_submitted_alert": "Checklist inviata:\n",
+  "customer_information": "Informazioni Cliente",
+  "full_name": "Nome completo",
+  "full_name_placeholder": "nome cliente",
+  "national_id": "Codice Fiscale",
+  "national_id_placeholder": "codice fiscale",
+  "email": "Email",
+  "email_placeholder": "Cliente@email",
+  "phone": "Telefono",
+  "phone_placeholder": "+1 234 567 89",
+  "address": "Indirizzo",
+  "address_placeholder": "Indirizzo cliente",
+  "customer_info_submitted_alert": "Informazioni cliente inviate:\n",
+  "phone_invalid": "Numero di telefono non valido",
+  "phone_required": "Il telefono è obbligatorio",
+  "company_info": {
+    "title": "Informazioni sull'azienda",
+    "name": "Nome azienda",
+    "select_company": "Seleziona un'azienda",
+    "address": "Indirizzo",
+    "phone": "Telefono",
+    "companies": {
+      "TechCrap Industries": "TechCrap Industries",
+      "MegaCorp Solutions": "MegaCorp Solutions",
+      "AlphaBeta Co.": "AlphaBeta Co.",
+      "FutureWorks Ltd.": "FutureWorks Ltd.",
+      "GammaTech LLC": "GammaTech LLC"
+    }
+  },
+  "engineer_info": {
+    "title": "Informazioni sull'ingegnere",
+    "name": "Nome ingegnere",
+    "national_id": "Codice fiscale",
+    "placeholders": {
+      "name": "John Doe",
+      "national_id": "Codice fiscale"
+    }
+  },
+  "spare_parts": {
+    "title": "Ricambi",
+    "part_name": "Nome parte",
+    "quantity": "Quantità",
+    "status": "Stato",
+    "placeholders": {
+      "part_name": "Nome parte",
+      "quantity": "Inserisci quantità",
+      "select_status": "Seleziona stato"
+    },
+    "options": {
+      "available": "Disponibile",
+      "not_available": "Non disponibile",
+      "ordered": "Ordinato"
+    }
+  },
+  "rating": {
+    "title": "Valutazione",
+    "label": "Valuta questo servizio :",
+    "error": "Valutazione obbligatoria"
+  },
+  "signatures": {
+    "title": "Firme",
+    "customer": "Firma del Cliente",
+    "engineer": "Firma dell'Ingegnere"
+  },
+  "reportPage": {
+    "submitButton": "Invia rapporto"
+  },
+  "my_orders": "Il mio ordine",
+  "menu": "Menu",
+  "total_order": "Ordini totali",
+  "completed": "Completato",
+  "in_progress": "In corso",
+  "recent_order": "Ordine recente",
+  "order": "Ordine",
+  "placed_at": "Effettuato il",
+  "type": "Tipo",
+  "view_details": "Vedi dettagli",
+  "cancel_order": "Annulla ordine"
+
+}
