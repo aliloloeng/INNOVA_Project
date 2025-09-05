@@ -37,7 +37,7 @@ const routes = [
 
 
 const router = createRouter({
-  history: createWebHistory('/Vue_test_pages/'),
+  history: createWebHistory('/INNOVA_Project/'),
   routes
 })
 
