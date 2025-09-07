@@ -1,11 +1,11 @@
 <template>
-  <section class="bg-[#f3f4f6] text-gray-700 min-h-screen flex justify-center items-start py-10 px-1">
-    <div class="w-full max-w-[380px] flex flex-col items-center gap-6">
-      <div class="w-[150px] h-[150px] flex justify-center items-center">
+  <section class="bg-[#f3f4f6]  text-gray-700 min-h-screen flex justify-center items-start py-10 px-1">
+    <div class=" mobile-box flex flex-col items-center gap-6">
+      <div class="flex justify-center items-center">
         <img
           :src="logo"
           alt="Company Logo"
-          class="w-full h-full rounded-full object-cover border shadow-md"
+          class="w-40 rounded-full object-cover border shadow-md"
         >
       </div>
 
@@ -26,7 +26,7 @@
           class="flex items-center justify-center gap-2 text-xl font-semibold px-6 py-4 w-full bg-[#2652c3] text-white rounded-xl shadow hover:bg-blue-800 transition"
         >
           <IconSend/>
-          {{ $t('reportPage.submitButton') }}
+          Submit Report
         </button>
       </div>
     </div>

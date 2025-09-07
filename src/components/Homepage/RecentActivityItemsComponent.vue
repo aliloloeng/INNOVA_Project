@@ -1,5 +1,5 @@
 <template>
-  <ul class="px-2">
+  <ul class="px-5">
     <li
       v-for="activity in activities"
       :key="activity.id"

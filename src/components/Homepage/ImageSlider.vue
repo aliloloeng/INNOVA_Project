@@ -1,6 +1,6 @@
 <template>
   <section class="bg-[#f3f4f6] p-1 mobile-box">
-    <div class="relative overflow-hidden rounded-xl shadow-lg my-10">
+    <div class="relative overflow-hidden rounded-xl shadow-lg my-10  mx-4">
       <div
         class="flex transition-transform duration-500"
         :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
@@ -20,12 +20,12 @@
     </div>
     <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
       <span
-        v-for="(image, idx) in images"
-        :key="idx"
+        v-for="(index) in images"
+        :key="index"
         :class="{
           'w-3 h-3 rounded-full transition-colors duration-300': true,
-          'bg-white': currentIndex !== idx,
-          'bg-blue-500': currentIndex === idx
+          'bg-white': currentIndex !== index,
+          'bg-blue-500': currentIndex === index
         }"
       ></span>
     </div>

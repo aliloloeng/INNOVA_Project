@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-[#f3f4f6] p-4 max-w-[375px] mx-auto">
+  <main class="bg-[#f3f4f6] mobile-box">
     <div class="flex justify-between mb-3 px-5">
       <h1 class="text-xl font-bold text-gray-600 ">{{ $t('recent_machines') }}</h1>
       <button @click="toggleAll" class="text-sm font-medium flex items-center gap-1 text-blue-500 hover:underline">

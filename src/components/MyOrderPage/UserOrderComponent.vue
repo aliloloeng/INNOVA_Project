@@ -1,10 +1,10 @@
 <template>
-  <section class="bg-[#f3f4f6] py-4">
-    <div class="flex items-center space-x-4 p-3 mx-4 rounded-xl shadow-sm bg-white">
+  <section class="bg-[#f3f4f6]  py-4">
+    <div class="flex justify-between items-center space-x-4 p-3 mx-4 rounded-xl shadow-sm bg-white">
       <img
         :src="user"
         alt="User Avatar"
-        class="w-14 h-14 rounded-full border-2 border-blue-600 object-cover"
+        class="w-30 h-30 rounded-full border-2 border-blue-600 object-cover ml-4"
       />
 
       <div class="flex flex-col">

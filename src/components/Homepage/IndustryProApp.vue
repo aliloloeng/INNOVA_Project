@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-[#f3f4f6]  flex justify-center items-center">
-    <div class="w-[95%] max-w-[375px] mx-auto bg-[#2e64d5] rounded-2xl text-white p-6 relative overflow-hidden">
+  <section class="bg-[#f3f4f6]  flex justify-center items-center pb-4">
+    <div class="w-[90%] mobile-box bg-[#2e64d5] rounded-2xl text-white p-8 relative overflow-hidden">
       <div class="flex items-center font-bold text-2xl mb-3">
         <IconSmartphone />
         <h2>{{ $t('industryApp.title') }}</h2>

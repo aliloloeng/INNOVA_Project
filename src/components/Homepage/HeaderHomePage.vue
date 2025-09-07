@@ -1,5 +1,5 @@
 <template>
-  <header class="card-bg px-4 py-3 drop-shadow-md center-flex mobile-box">
+  <header class="card-bg px-4 pb-3 pt-8 drop-shadow-md center-flex mobile-box">
     <div class="flex justify-between items-center w-full">
       <div>
         <img
@@ -16,8 +16,8 @@
       <section class="flex gap-3 items-center">
         <div class="flex flex-col items-end">
           <h3 class="font-bold">{{ user[0].name }}</h3>
-          <p class="user-sub">{{ $t(`status.${user[0].status}`) }}</p>
-          <p class="user-sub">{{ $t(`job.${user[0].job}`) }}</p>
+          <p class="text-sm font-normal">{{ $t(`status.${user[0].status}`) }}</p>
+          <p class="text-sm font-normal">{{ $t(`job.${user[0].job}`) }}</p>
         </div>
         <div>
           <img

@@ -1,5 +1,5 @@
 <template>
-  <section class="w-[360px] p-4 bg-[#f3f4f6]">
+  <section class="mobile-box p-4 bg-[#f3f4f6]">
 
     <div class="relative bg-white rounded-xl overflow-hidden mb-6">
       <input

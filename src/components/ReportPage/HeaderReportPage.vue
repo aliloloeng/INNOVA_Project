@@ -1,6 +1,6 @@
 <template>
   <header
-    class="bg-white text-gray-700  py-3 flex items-center drop-shadow-md w-[370px]"
+    class="bg-white text-gray-700 mobile-box pb-3 pt-8 flex items-center drop-shadow-md px-4"
   >
     <RouterLink to="/" class="">
       <IconArrow class="w-6 h-6" />

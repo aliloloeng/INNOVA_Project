@@ -1,9 +1,9 @@
 <template>
-  <div class="flex justify-center">
-    <div>
+  <div class="flex justify-center ">
+    <div class="mobile-box">
       <HeaderProfilePage />
       <UserProfileComponent />
-      <section class="w-[375px] m-auto">
+      <section class=" m-auto">
         <nav>
           <ul
             class="flex space-x-4 my-4 text-base font-semibold overflow-x-auto whitespace-nowrap pb-5"

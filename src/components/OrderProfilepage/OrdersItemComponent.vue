@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col justify-between items-center bg-white p-3 rounded-lg border-l-5 border-gray-200 hover:shadow-md transition w-[95%] max-w-[375px] mx-auto"
+    class="flex flex-col justify-between items-center bg-white p-3 rounded-lg border-l-5 border-gray-200 hover:shadow-md transition w-[90%] max-w-[375px] mx-auto"
     :class="borderColor(status)"
   >
     <div class="flex justify-between items-center w-full mb-5">

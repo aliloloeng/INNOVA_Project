@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[360px] bg-[#f3f4f6] p-4 pb-8">
+  <div class="mobile-box bg-[#f3f4f6] p-4 pb-8">
     <div
       v-for="(order, index) in orders"
       :key="index"

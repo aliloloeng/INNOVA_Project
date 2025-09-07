@@ -1,5 +1,5 @@
 <template>
-  <ul class="px-2">
+  <ul class="px-2 w-[90%] m-auto pb-4">
     <li
       v-for="activity in activities"
       :key="activity.id"

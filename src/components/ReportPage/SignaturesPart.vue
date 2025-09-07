@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-white px-6 py-8 rounded-xl mb-6">
+  <div class="w-[90%] bg-white px-6 py-8 rounded-xl mb-6">
     <div class="flex items-center gap-4 mb-6">
       <div class="bg-blue-200 p-2 rounded-xl w-10">
         <IconSignature />

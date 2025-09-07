@@ -1,10 +1,10 @@
 
 <template>
   <div
-    class="flex flex-col justify-between items-center bg-white p-3 rounded-lg border-l-5 border-gray-200 hover:shadow-md transition w-[95%] max-w-[375px] mx-auto"
+    class="flex flex-col justify-between items-center bg-white p-3 rounded-lg border-l-5 border-gray-200 hover:shadow-md transition w-[90%] mx-auto"
     :class="borderColor(status)"
   >
-    <div class="flex justify-center items-center gap-[70px] mb-5">
+    <div class="flex justify-between items-center mb-5 w-full">
       <p class="font-semibold text-sm text-gray-800">{{ title }}</p>
       <span
         :class="statusColor(status)"
@@ -18,7 +18,7 @@
       <p>{{ text }}</p>
     </div>
 
-    <div class="flex justify-center items-center gap-[110px] text-xs text-gray-500">
+    <div class="flex justify-between items-center w-full text-xs text-gray-500">
       <p>{{ t("tickets.ticket") }} : #{{ Ticket }}</p>
       <p>{{ t("tickets.updated") }}: {{ date }}</p>
     </div>

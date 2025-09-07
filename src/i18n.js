@@ -1,15 +1,17 @@
 import { createI18n } from "vue-i18n"
 import de from "./locales/de.json"
 import it from "./locales/it.json"
+import en from "./locales/en.json"
 
 const i18n = createI18n({
   legacy: false,
   globalInjection: true,
-  locale: "de", // پیش‌فرض آلمانی
+  locale: "en",
   fallbackLocale: "de",
   messages: {
     de,
-    it
+    it,
+    en
   }
 })
 

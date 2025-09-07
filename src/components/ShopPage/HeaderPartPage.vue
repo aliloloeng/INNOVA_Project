@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white w-[360px] text-gray-700 px-4 py-3 flex items-center drop-shadow-md">
+  <header class="bg-white mobile-box text-gray-700 px-4 pb-3 pt-8 flex items-center drop-shadow-md">
     <RouterLink to="/" class="mr-2">
       <IconArrow class="w-6 h-6" />
     </RouterLink>

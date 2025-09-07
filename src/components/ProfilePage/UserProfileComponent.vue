@@ -1,13 +1,16 @@
 <template>
-  <section class="bg-[#f3f4f6] py-6">
+  <section class="bg-[#f3f4f6] mobile-box py-6">
     <div
-      class="flex items-center space-x-4 p-3 bg-white w-[95%] max-w-[375px] mx-auto rounded-xl shadow-md"
+      class="flex  items-center space-x-4 p-3 bg-white w-[90%] mx-auto rounded-xl shadow-md"
     >
       <div class="relative">
         <img
           :src="userImage"
           alt="User Avatar"
-          class="w-35 h-25 rounded-full border-2 border-blue-600 object-cover aspect-square cursor-pointer"
+          :class="[
+            'rounded-full border-2 border-blue-600 object-cover aspect-square cursor-pointer',
+            locale === 'it' ? 'w-35' : 'w-35'
+          ]"
           @click="triggerFileInput"
         />
         <input
@@ -58,7 +61,7 @@ defineProps({
   status: { type: String, default: "Active" }
 })
 
-const { t } = useI18n()
+const { t,locale } = useI18n()
 
 const userImage = ref(defaultUser)
 const fileInput = ref(null)

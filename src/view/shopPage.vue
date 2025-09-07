@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center">
-    <div>
+    <div class="mobile-box">
       <HeaderPartPage/>
       <ProductsComponent/>
     </div>

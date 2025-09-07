@@ -1,6 +1,6 @@
 <template>
-  <header class="bg-white text-gray-700 font-semibold px-6 py-3 flex justify-center items-center drop-shadow-md">
-    <div class="flex justify-around items-center gap-10 ">
+  <header class="bg-white mobile-box text-gray-700 font-semibold px-6 py-3 drop-shadow-md">
+    <div class="flex justify-around items-center gap-10">
       <div>
         <p >Company Logo</p>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[360px] bg-[#f3f4f6] ">
+  <div class="mobile-box bg-[#f3f4f6] ">
     <div class="px-4">
       <h1 class="text-xl font-semibold text-gray-600">{{ $t("recent_order") }}</h1>
     </div>

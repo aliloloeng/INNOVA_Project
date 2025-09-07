@@ -2,9 +2,8 @@
 
 @layer components {
   .mobile-box {
-    @apply w-full max-w-[375px] mx-auto;
+    @apply w-full max-w-[900px] mx-auto ;
   }
-
   .center-flex {
     @apply flex justify-center items-center;
   }
@@ -27,7 +26,6 @@
   .font-normal-custom {
     @apply font-normal;
   }
-
   .overlay-1 {
     @apply opacity-25;
   }

@@ -1,6 +1,6 @@
 <template>
-  <main class="bg-[#f3f4f6] p-4">
-    <div class="flex justify-between mb-3 px-5">
+  <main class="bg-[#f3f4f6] mobile-box pb-4">
+    <div class="flex justify-between p-5">
       <h1 class="text-xl font-bold text-gray-600">{{ $t('recent_activities') }}</h1>
       <button
         @click="toggleAll"

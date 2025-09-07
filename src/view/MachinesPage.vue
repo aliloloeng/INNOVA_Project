@@ -1,6 +1,6 @@
 <template>
-  <div class="flex justify-center">
-      <div>
+  <div class="flex justify-center ">
+      <div class="mobile-box">
         <HeaderHomePage/>
         <MachinesComponent/>
         <RecentMachinesComponent/>

@@ -1,0 +1,275 @@
+{
+  "support_center": "Support Center",
+  "profile": "Profile",
+  "home": "Home",
+  "machines": "Machines",
+  "about": "About Us",
+  "my_ticket": "My Ticket",
+  "my_order": "My Order",
+  "my_report": "My Report",
+  "message_admin": "Message Admin",
+  "active": "Active",
+  "inactive": "Inactive",
+  "member_since": "Member Since",
+  "forgot_password": "Forgot Password?",
+  "redirect_forgot_password": "Redirecting to Forgot Password page...",
+  "tickets": {
+    "title": "Tickets",
+    "sort": "Sort",
+    "ticket": "Ticket",
+    "updated": "Updated",
+    "filters": {
+      "all": "All Tickets",
+      "open": "Open",
+      "closed": "Closed",
+      "inProgress": "In Progress"
+    }
+  },
+  "orders": {
+    "title": "Orders",
+    "sort": "Sort",
+    "order": "Order",
+    "updated": "Updated",
+    "filters": {
+      "all": "All Orders",
+      "open": "Open",
+      "closed": "Closed",
+      "inProgress": "In Progress"
+    },
+    "status": {
+      "open": "Open",
+      "closed": "Closed",
+      "inProgress": "In Progress"
+    }
+  },
+  "company_name": "Tech Corp",
+  "status": {
+    "maintenance": "Maintenance",
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "job": {
+    "Developer": "Developer"
+  },
+  "industryApp": {
+    "title": "IndustryPro App",
+    "description": "Your complete industrial management solution. Track machines, manage reports, order spare parts, and stay connected with your team – all in one powerful mobile app.",
+    "support": "Support",
+    "companies": "Companies",
+    "uptime": "Uptime"
+  },
+  "recent_activities": "Recent Activities",
+  "show_less": "Show Less",
+  "see_all": "See All",
+  "activities": {
+    "maintenance_report": "Maintenance Report #2846",
+    "cnc_machine_floor": "CNC Machine - Floor 2",
+    "completed": "Completed",
+    "parts_order": "Parts Order #1254",
+    "hydraulic_pump_replacement": "Hydraulic Pump Replacement",
+    "in_progress": "In Progress",
+    "issue_report": "Issue Report #3412",
+    "assembly_line_b_urgent": "Assembly Line B - Urgent",
+    "pending": "Pending",
+    "2h_ago": "2 hours ago",
+    "yesterday": "Yesterday",
+    "2_days_ago": "2 days ago"
+  },
+  "parts_shop": "Parts Shop",
+  "search_parts": "Search parts...",
+  "out_of_stock": "Out of Stock",
+  "low_stock": "Low Stock",
+  "in_stock": "In Stock",
+  "qty": "Quantity",
+  "products": {
+    "Hydraulic Pump HP-200": "Hydraulic Pump HP-200",
+    "Hydraulic System": "Hydraulic System",
+    "Electrical Motor Em-150": "Electrical Motor Em-150",
+    "Electrical Component": "Electrical Component",
+    "Ball Bearing BB-45": "Ball Bearing BB-45",
+    "Mechanical Part": "Mechanical Part",
+    "Oil Filter OF-30": "Oil Filter OF-30",
+    "Filter System": "Filter System",
+    "Pressure Valve PV-80": "Pressure Valve PV-80",
+    "Power Cable PC-100": "Power Cable PC-100"
+  },
+  "machines_search_description": "Search or scan the QR code to find machines",
+  "search_machine_placeholder": "Search machine by name...",
+  "scan_qr_code": "Scan QR Code",
+  "recent_machines": "Recent Machines",
+  "new_report_header": {
+    "new_report": "New Report",
+    "company_name": "TechCrap Industries",
+    "save": "Save"
+  },
+  "machines_activities": {
+    "maintenance_report": "Maintenance Report #2846",
+    "cnc_machine_floor": "CNC Machine - Floor 2",
+    "parts_order": "Parts Order #1254",
+    "hydraulic_pump_replacement": "Hydraulic Pump Replacement",
+    "issue_report": "Issue Report #3412",
+    "assembly_line_b_urgent": "Assembly Line B - Urgent",
+    "active": "Active",
+    "maintenance": "Maintenance"
+  },
+  "draft_mode": {
+    "title": "Draft Mode Active",
+    "description": "You can start filling out this report and return later to complete it. Please note: submissions are monitored by the admin team."
+  },
+  "report_nav": {
+    "inspection": "Inspection Report",
+    "services": "Service Report"
+  },
+  "select_date": "Select Date",
+  "basic_info": {
+    "title": "Basic Information",
+    "topic": "Topic",
+    "topic_placeholder": "Enter report topic",
+    "type": "Type",
+    "type_placeholder": "Select type",
+    "types": {
+      "incident": "Incident",
+      "maintenance": "Maintenance",
+      "inspection": "Inspection"
+    },
+    "status": "Status",
+    "status_placeholder": "Select status",
+    "statuses": {
+      "open": "Open",
+      "in_progress": "In Progress",
+      "closed": "Closed"
+    }
+  },
+  "action_details": {
+    "title": "Action Details",
+    "enter_picture": "Enter Picture",
+    "picture_entry": "Picture Entry",
+    "enter_picture_manually": "Enter Picture Manually",
+    "send": "Send",
+    "day_of_week": "Day of the Week",
+    "select_day": "Select a day...",
+    "days": {
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday"
+    },
+    "article_description": "Article Description",
+    "article": "Article",
+    "quantity_hours": "Quantity/Hours:",
+    "select_hour": "Select Hour",
+    "duration": "Duration",
+    "from": "From",
+    "until": "Until",
+    "status": "Status",
+    "select_status": "Select...",
+    "statuses": {
+      "ok": "OK",
+      "not_ok": "Not OK",
+      "pending": "Pending"
+    },
+    "remove_action": "Remove this action",
+    "add_new_action": "Add New Action"
+  },
+  "checklist": "Checklist",
+  "your_input": "Your Input",
+  "your_input_placeholder": "Write something...",
+  "send_to_ai": "Send to AI",
+  "ai_result": "AI Result",
+  "item": "Item",
+  "enter_item": "Enter item...",
+  "add_item": "Add Item",
+  "fallback_checklist": [
+    "Check engine oil level",
+    "Check spark plugs",
+    "Check air filter",
+    "Inspect timing belt",
+    "Check coolant level",
+    "Check battery and connections",
+    "Test fuel system",
+    "Check brakes and fluids",
+    "Inspect exhaust system",
+    "Schedule professional diagnostics"
+  ],
+  "checklist_submitted_alert": "Checklist submitted:\n",
+  "customer_information": "Customer Information",
+  "full_name": "Full Name",
+  "full_name_placeholder": "Customer Name",
+  "national_id": "National ID",
+  "national_id_placeholder": "National ID",
+  "email": "Email",
+  "email_placeholder": "customer@email",
+  "phone": "Phone",
+  "phone_placeholder": "+1 234 567 89",
+  "address": "Address",
+  "address_placeholder": "Customer Address",
+  "customer_info_submitted_alert": "Customer information submitted:\n",
+  "phone_invalid": "Phone number is invalid",
+  "phone_required": "Phone is required",
+  "company_info": {
+    "title": "Company Information",
+    "name": "Company Name",
+    "select_company": "Select Company",
+    "address": "Address",
+    "phone": "Phone",
+    "companies": {
+      "TechCrap Industries": "TechCrap Industries",
+      "MegaCorp Solutions": "MegaCorp Solutions",
+      "AlphaBeta Co.": "AlphaBeta Co.",
+      "FutureWorks Ltd.": "FutureWorks Ltd.",
+      "GammaTech LLC": "GammaTech LLC"
+    }
+  },
+  "engineer_info": {
+    "title": "Engineer Information",
+    "name": "Engineer Name",
+    "national_id": "National ID",
+    "placeholders": {
+      "name": "John Doe",
+      "national_id": "National ID"
+    }
+  },
+  "spare_parts": {
+    "title": "Spare Parts",
+    "part_name": "Part Name",
+    "quantity": "Quantity",
+    "status": "Status",
+    "placeholders": {
+      "part_name": "Part Name",
+      "quantity": "Enter Quantity",
+      "select_status": "Select Status"
+    },
+    "options": {
+      "available": "Available",
+      "not_available": "Not Available",
+      "ordered": "Ordered"
+    }
+  },
+  "rating": {
+    "title": "Rating",
+    "label": "Rate this service:",
+    "error": "Rating required"
+  },
+  "signatures": {
+    "title": "Signatures",
+    "customer": "Customer Signature",
+    "engineer": "Engineer Signature"
+  },
+  "reportPage": {
+    "submitButton": "Submit Report"
+  },
+  "my_orders": "My Orders",
+  "menu": "Menu",
+  "total_order": "Total Orders",
+  "completed": "Completed",
+  "in_progress": "In Progress",
+  "recent_order": "Recent Order",
+  "order": "Order",
+  "placed_at": "Placed At",
+  "type": "Type",
+  "view_details": "View Details",
+  "cancel_order": "Cancel Order"
+}

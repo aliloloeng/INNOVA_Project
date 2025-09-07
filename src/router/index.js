@@ -13,6 +13,7 @@ const routes = [
 {
   path: '/report',
   name: 'Report',
+  redirect: '/report/inspection-report',
   component: ReportPage,
   children:[
     { path:'inspection-report', name:'InspectionReport', component:() => import('@/view/ReportPage/InspectionReportComponent.vue') },
@@ -26,6 +27,7 @@ const routes = [
   path: '/profile',
   name: 'Profile',
   component: ProfilePage,
+  redirect: '/profile/myTicket',
   children:[
     { path:'myTicket', name:'myTicket', component:() => import('@/view/profile/MyTicketPage.vue') },
     { path:'massageAdmin', name:'massageAdmin', component:() => import('@/view/profile/massageAdminPage.vue') },

@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen">
+  <div>
     <h2 class="text-xl font-bold mb-4 ml-5">{{ $t('my_report') }}</h2>
 
     <div class="flex items-center justify-between px-4 mb-8">

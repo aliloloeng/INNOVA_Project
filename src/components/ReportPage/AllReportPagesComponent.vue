@@ -1,7 +1,7 @@
 <template>
-  <section class="bg-[#f3f4f6] w-[370px] text-gray-700 mb-5">
+  <section class="bg-[#f3f4f6]   text-gray-700 mb-5">
     <nav class="flex justify-center ">
-      <ul class="flex space-x-2 my-4 text-base font-semibold">
+      <ul class="flex justify-between w-full px-4 my-4 text-sm font-semibold">
         <li class="">
           <RouterLink
             to="/report/inspection-report"

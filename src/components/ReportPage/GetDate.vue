@@ -1,6 +1,6 @@
 <template>
-  <div class="flex items-center justify-center bg-gray-100">
-    <div class="w-[360px] bg-white px-6 py-8 rounded-xl shadow-md">
+  <div class="flex items-center justify-center w-[90%] bg-gray-100">
+    <div class="mobile-box bg-white px-6 py-8 rounded-xl ">
 
       <label for="date-input" class="block text-gray-700 font-medium mb-2">
         <div class="flex items-center gap-4 mb-4">

@@ -1,0 +1,6 @@
+{
+	"appId": "com.innova.project",
+	"appName": "INNOVA_Project",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
