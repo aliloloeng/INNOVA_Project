@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">INNOVA_project</string>
-    <string name="title_activity_main">INNOVA_project</string>
+    <string name="app_name">INNOVA_Project</string>
+    <string name="title_activity_main">INNOVA_Project</string>
     <string name="package_name">com.innova.project</string>
     <string name="custom_url_scheme">com.innova.project</string>
 </resources>

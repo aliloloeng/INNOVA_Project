@@ -1,12 +1,12 @@
 <template>
   <header
-    class="bg-white text-gray-700 mobile-box pb-3 pt-8 flex items-center drop-shadow-md px-4"
+    class="bg-white text-gray-700 mobile-box pb-3 pt-6 flex items-center drop-shadow-md px-4"
   >
     <RouterLink to="/" class="">
       <IconArrow class="w-6 h-6" />
     </RouterLink>
 
-    <div class="flex gap-5 justify-between w-full">
+    <div class="flex justify-between w-full">
       <div class="flex items-center gap-2">
         <div class="flex-shrink-0">
           <img
@@ -16,8 +16,8 @@
           >
         </div>
         <div class="leading-tight">
-          <h2 class="font-bold text-sm ">{{ $t('new_report_header.new_report') }}</h2>
-          <p class="text-sm text-gray-400">{{ $t('new_report_header.company_name') }}</p>
+          <h2 class="font-bold text-xs ">{{ $t('new_report_header.new_report') }}</h2>
+          <p class="text-xs text-gray-400">{{ $t('new_report_header.company_name') }}</p>
         </div>
       </div>
 

@@ -195,7 +195,7 @@
     "Programmare una diagnosi professionale"
   ],
   "checklist_submitted_alert": "Checklist inviata:\n",
-  "customer_information": "Informazioni Cliente",
+  "Customer_Information": "Informazioni Cliente",
   "full_name": "Nome completo",
   "full_name_placeholder": "nome cliente",
   "national_id": "Codice Fiscale",
@@ -255,8 +255,9 @@
   },
   "signatures": {
     "title": "Firme",
-    "customer": "Firma del Cliente",
-    "engineer": "Firma dell'Ingegnere"
+    "customer": "Firma del cliente",
+    "engineer": "Firma dell'ingegnere",
+    "clear": "Cancella"
   },
   "reportPage": {
     "submitButton": "Invia rapporto"
@@ -271,6 +272,20 @@
   "placed_at": "Effettuato il",
   "type": "Tipo",
   "view_details": "Vedi dettagli",
-  "cancel_order": "Annulla ordine"
+  "cancel_order": "Annulla ordine",
+  "pdf_actions": {
+    "title": "Azioni PDF",
+    "download_button": "Scarica PDF",
+    "send_email_button": "Invia PDF via Email",
+    "report_details": "Dettagli del Report",
+    "day": "Giorno",
+    "article": "Articolo",
+    "hours": "Ore",
+    "from": "Da",
+    "to": "Fino a",
+    "status": "Stato",
+    "pdf_downloaded": "PDF scaricato!",
+    "pdf_ready_console": "PDF pronto per l'invio via email (controlla la console)"
+  }
 
 }

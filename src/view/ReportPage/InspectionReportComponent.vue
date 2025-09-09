@@ -23,12 +23,14 @@
       <div class="flex justify-center w-full pt-6">
         <button
           @click="submitReport"
-          class="flex items-center justify-center gap-2 text-xl font-semibold px-6 py-4 w-full bg-[#2652c3] text-white rounded-xl shadow hover:bg-blue-800 transition"
+          class="w-[90%] flex items-center justify-center gap-2 text-xl font-semibold px-6 py-4 bg-[#2652c3] text-white rounded-xl shadow hover:bg-blue-800 transition"
         >
           <IconSend/>
           Submit Report
         </button>
       </div>
+
+      <PdfActions :reportData="reportStore.actionDetails" />
     </div>
   </section>
 </template>
@@ -46,11 +48,12 @@ import ActionDetailsInspection from '@/components/ReportPage/ActionDetailsInspec
 import CompanyInformationInspection from '@/components/ReportPage/CompanyInformationInspection.vue'
 import GetDate from '@/components/ReportPage/GetDate.vue'
 import RatingPart from '@/components/ReportPage/RatingPart.vue'
+import PdfActions from '@/components/ReportPage/PdfActions.vue'
 
 
 const reportStore = useReportStore()
 
 function submitReport() {
-  alert("Report Submitted:\n" + JSON.stringify(reportStore.$state, null, 2))
+    console.log("Report Submitted:\n" + JSON.stringify(reportStore.$state, null, 2))
 }
 </script>

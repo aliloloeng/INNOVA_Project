@@ -7,7 +7,8 @@
       <h2 class="text-2xl font-bold">{{ $t('signatures.title') }}</h2>
     </div>
 
-    <div class="flex flex-col ">
+    <div class="flex flex-col">
+      <!-- Customer -->
       <div class="flex-1 mb-6">
         <h3 class="text-lg font-semibold mb-2">{{ $t('signatures.customer') }}</h3>
         <canvas
@@ -22,8 +23,17 @@
           @touchmove.prevent="drawTouch($event, 'customer')"
           @touchend="stopDrawing('customer')"
         ></canvas>
+        <div class="mt-4 flex justify-end">
+          <button
+            @click="clearSignature('customer')"
+            class="w-full py-3 bg-blue-500 text-white text-sm rounded-lg hover:bg-blue-600 transition"
+          >
+            {{ $t('signatures.clear') }}
+          </button>
+        </div>
       </div>
 
+      <!-- Engineer -->
       <div class="flex-1">
         <h3 class="text-lg font-semibold mb-2">{{ $t('signatures.engineer') }}</h3>
         <canvas
@@ -38,6 +48,14 @@
           @touchmove.prevent="drawTouch($event, 'engineer')"
           @touchend="stopDrawing('engineer')"
         ></canvas>
+        <div class="mt-4 flex justify-end">
+          <button
+            @click="clearSignature('engineer')"
+            class="w-full py-3 bg-blue-500 text-white text-sm rounded-lg hover:bg-blue-600 transition"
+          >
+            {{ $t('signatures.clear') }}
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -98,5 +116,14 @@ function drawTouch(e, type) {
   const rect = canvas.getBoundingClientRect()
   ctxMap[type].lineTo(touch.clientX - rect.left, touch.clientY - rect.top)
   ctxMap[type].stroke()
+}
+
+function clearSignature(type) {
+  const canvas = type === 'customer' ? customerCanvas.value : engineerCanvas.value
+  if (canvas) {
+    const ctx = canvas.getContext('2d')
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    reportStore.signatures[type] = null
+  }
 }
 </script>

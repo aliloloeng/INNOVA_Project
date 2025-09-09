@@ -12,20 +12,21 @@
 
       <div v-for="(action, index) in reportStore.actionDetails" :key="index">
 
+        <!-- آپلود عکس -->
         <div class="border-2 p-4">
           <h2 class="text-gray-700 font-medium mb-1">{{ $t('action_details.enter_picture') }}</h2>
           <div class="border-2 border-dashed border-green-600 rounded-lg center-flex flex-col pb-2 pt-4">
             <h4 class="text-gray-700 text-base font-medium">{{ $t('action_details.picture_entry') }}</h4>
             <p class="text-gray-500 text-sm">{{ $t('action_details.enter_picture_manually') }}</p>
 
-            <div class="py-4 flex flex-col gap-2">
+            <div class="py-4 flex flex-col gap-4">
+            <div class="flex justify-center items-center">
               <label
                 :for="'file-upload-' + index"
-                class="cursor-pointer font-normal text-sm px-4 py-2 bg-green-700 text-white rounded-full hover:bg-green-600"
+                class="cursor-pointer font-normal text-sm px-4 py-2 bg-green-700 text-white rounded-full hover:bg-green-600 inline-block"
               >
                 {{ $t('action_details.send') }}
               </label>
-
               <input
                 type="file"
                 :id="'file-upload-' + index"
@@ -34,19 +35,30 @@
                 multiple
                 @change="handleFileChange($event, index)"
               />
+            </div>
 
-              <div class="flex flex-wrap gap-2">
-                <img
-                  v-for="(img, i) in action.pictures"
-                  :key="i"
-                  :src="img"
-                  class="w-16 h-16 object-cover rounded-md"
-                />
+            <div class="flex flex-wrap items-center justify-center gap-2">
+              <div
+                v-for="(img, i) in action.pictures"
+                :key="i"
+                class="relative w-16 h-16"
+              >
+                <img :src="img" class="w-full h-full object-cover rounded-md" />
+                <button
+                  type="button"
+                  @click="removeImage(index, i)"
+                  class="absolute -top-2 -right-2 bg-red-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs leading-none hover:bg-red-500"
+                >
+                  ✕
+                </button>
               </div>
             </div>
           </div>
+
+          </div>
         </div>
 
+        <!-- انتخاب روز هفته -->
         <div class="flex flex-col border-b-2 border-l-2 border-r-2 p-4">
           <label class="text-gray-700 font-medium mb-1">{{ $t('action_details.day_of_week') }}</label>
           <select
@@ -64,19 +76,20 @@
           </select>
         </div>
 
+        <!-- توضیحات -->
+        <div class="flex flex-col border-b-2 border-l-2 border-r-2 p-4">
+          <label class="text-gray-700 font-medium mb-1">{{ $t('action_details.article_description') }}</label>
+          <textarea
+            v-model="action.remark"
+            :placeholder="$t('action_details.article')"
+            class="border border-gray-300 bg-gray-100 rounded-lg px-3 py-2 h-20 resize-none focus:outline-none focus:ring-2 focus:ring-green-400"
+          ></textarea>
+        </div>
 
-          <div class="flex flex-col  border-b-2 border-l-2 border-r-2  p-4">
-            <label class="text-gray-700 font-medium mb-1">{{ $t('action_details.article_description') }}</label>
-            <textarea
-              v-model="action.remark"
-              :placeholder="$t('action_details.article')"
-              class="border border-gray-300 bg-gray-100 rounded-lg px-3 py-2 h-20 resize-none focus:outline-none focus:ring-2 focus:ring-green-400"
-            ></textarea>
-          </div>
-
-          <div class="flex flex-col border-b-2 border-l-2 border-r-2 p-4 space-y-4">
-            <h2 class="text-gray-700 font-medium mb-1">{{ $t('action_details.quantity_hours') }}</h2>
-            <div>
+        <!-- ساعت و بازه -->
+        <div class="flex flex-col border-b-2 border-l-2 border-r-2 p-4 space-y-4">
+          <h2 class="text-gray-700 font-medium mb-1">{{ $t('action_details.quantity_hours') }}</h2>
+          <div>
             <label class="text-gray-700 font-medium mb-1">{{ $t('action_details.select_hour') }}</label>
             <select
               v-model="action.hour"
@@ -87,55 +100,54 @@
           </div>
 
           <div>
-          <label class="text-gray-700 font-medium mb-1">{{ $t('action_details.duration') }}</label>
-          <div class="flex items-center justify-center gap-2 w-full">
+            <label class="text-gray-700 font-medium">{{ $t('action_details.duration') }}</label>
+            <div class="flex items-center justify-center gap-2 w-full mt-4">
+              <div class="flex items-center w-1/2 ">
+                <input
+                  type="number"
+                  min="0"
+                  max="24"
+                  v-model="action.startHour"
+                  :placeholder="$t('action_details.from')"
+                  class="w-full border border-gray-300 bg-gray-100 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
+                  @input="validateHour(action, 'startHour')"
+                />
+              </div>
 
-            <div class="flex items-center w-1/2 mt-2">
-              <input
-                type="number"
-                min="1"
-                max="24"
-                v-model="action.startHour"
-                placeholder="From"
-                class="w-full border border-gray-300 bg-gray-100 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
-              />
-              <span class="ml-2 text-sm text-gray-500">
-                {{ getAmPm(action.startHour) }}
-              </span>
-            </div>
+              <div>
+                <span class="text-gray-700">{{ $t('action_details.until') }}</span>
+              </div>
 
-            <span class="text-gray-600">{{ $t('action_details.until') }}</span>
-
-            <div class="flex items-center w-1/2">
-              <input
-                type="number"
-                min="1"
-                max="24"
-                v-model="action.endHour"
-                placeholder="Until"
-                class="w-full border border-gray-300 bg-gray-100 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
-              />
-              <span class="ml-2 text-sm text-gray-500">
-                {{ getAmPm(action.endHour) }}
-              </span>
+              <div class="flex items-center w-1/2">
+                <input
+                  type="number"
+                  min="0"
+                  max="24"
+                  v-model="action.endHour"
+                  :placeholder="$t('action_details.until')"
+                  class="w-full border border-gray-300 bg-gray-100 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
+                  @input="validateHour(action, 'endHour')"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-        <div class="flex flex-col  border-b-2 border-l-2 border-r-2  p-4">
+        <!-- وضعیت -->
+        <div class="flex flex-col border-b-2 border-l-2 border-r-2 p-4">
           <label class="text-gray-700 font-medium mb-1">{{ $t('action_details.status') }}</label>
           <select
             v-model="action.status"
             class="border border-gray-300 bg-gray-100 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
           >
             <option value="">{{ $t('action_details.select_status') }}</option>
-            <option value="ok">{{ $t('action_details.select_status.ok') }}</option>
-            <option value="not-ok">{{ $t('action_details.select_status.not-ok') }}</option>
-            <option value="pending">{{ $t('action_details.select_status.pending') }}</option>
+            <option value="ok">{{ $t('action_details.statuses.ok') }}</option>
+            <option value="not_ok">{{ $t('action_details.statuses.not_ok') }}</option>
+            <option value="pending">{{ $t('action_details.statuses.pending') }}</option>
           </select>
         </div>
 
+        <!-- دکمه حذف اکشن -->
         <button
           type="button"
           @click="removeAction(index)"
@@ -145,6 +157,7 @@
         </button>
       </div>
 
+      <!-- دکمه اضافه کردن اکشن جدید -->
       <button
         type="button"
         @click="addAction"
@@ -178,6 +191,15 @@ function addAction() {
   })
 }
 
+function validateHour(action, field) {
+  if (action[field] > 24) {
+    action[field] = 24
+  }
+  if (action[field] < 0) {
+    action[field] = 0
+  }
+}
+
 function removeAction(index) {
   reportStore.actionDetails.splice(index, 1)
 }
@@ -190,12 +212,11 @@ function handleFileChange(event, index) {
   }
 }
 
-function onSubmit() {
-  console.log('Form Submitted:', reportStore.actionDetails)
+function removeImage(actionIndex, imageIndex) {
+  reportStore.actionDetails[actionIndex].pictures.splice(imageIndex, 1)
 }
 
-function getAmPm(hour) {
-  if (!hour) return "";
-  return hour >= 12 ? "PM" : "AM";
+function onSubmit() {
+  console.log('Form Submitted:', reportStore.actionDetails)
 }
 </script>

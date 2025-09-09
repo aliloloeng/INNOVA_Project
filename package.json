@@ -21,6 +21,7 @@
     "axios": "^1.11.0",
     "dayjs": "^1.11.18",
     "html5-qrcode": "^2.3.8",
+    "jspdf": "^3.0.2",
     "pinia": "^3.0.3",
     "tailwindcss": "^4.1.13",
     "vee-validate": "^4.15.1",

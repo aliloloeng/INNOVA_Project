@@ -195,7 +195,7 @@
     "Professionelle Diagnose planen"
   ],
   "checklist_submitted_alert": "Checkliste übermittelt:\n",
-  "customer_information": "Kundeninformation",
+  "Customer_Information": "Kunden information",
   "full_name": "Vollständiger Name",
   "full_name_placeholder": "Kundenname",
   "national_id": "Personalausweisnummer",
@@ -254,9 +254,10 @@
     "error": "Bewertung erforderlich"
   },
   "signatures": {
-    "title": "Unterschriften",
-    "customer": "Unterschrift des Kunden",
-    "engineer": "Unterschrift des Ingenieurs"
+  "title": "Unterschriften",
+  "customer": "Unterschrift des Kunden",
+  "engineer": "Unterschrift des Ingenieurs",
+  "clear": "Löschen"
   },
   "reportPage": {
     "submitButton": "Bericht einreichen"
@@ -271,5 +272,19 @@
   "placed_at": "Bestellt am",
   "type": "Typ",
   "view_details": "Details ansehen",
-  "cancel_order": "Bestellung stornieren"
+  "cancel_order": "Bestellung stornieren",
+  "pdf_actions": {
+    "title": "PDF Aktionen",
+    "download_button": "PDF herunterladen",
+    "send_email_button": "PDF per E-Mail senden",
+    "report_details": "Bericht Details",
+    "day": "Tag",
+    "article": "Artikel",
+    "hours": "Stunden",
+    "from": "Von",
+    "to": "Bis",
+    "status": "Status",
+    "pdf_downloaded": "PDF heruntergeladen!",
+    "pdf_ready_console": "PDF bereit zum Senden per E-Mail (Konsole prüfen)"
+  }
 }

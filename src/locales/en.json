@@ -195,7 +195,7 @@
     "Schedule professional diagnostics"
   ],
   "checklist_submitted_alert": "Checklist submitted:\n",
-  "customer_information": "Customer Information",
+  "Customer_Information": "Customer Information",
   "full_name": "Full Name",
   "full_name_placeholder": "Customer Name",
   "national_id": "National ID",
@@ -255,8 +255,9 @@
   },
   "signatures": {
     "title": "Signatures",
-    "customer": "Customer Signature",
-    "engineer": "Engineer Signature"
+    "customer": "Customer's signature",
+    "engineer": "Engineer's signature",
+    "clear": "Clear"
   },
   "reportPage": {
     "submitButton": "Submit Report"
@@ -271,5 +272,22 @@
   "placed_at": "Placed At",
   "type": "Type",
   "view_details": "View Details",
-  "cancel_order": "Cancel Order"
+  "cancel_order": "Cancel Order",
+  "pdf_actions": {
+    "title": "PDF Actions",
+    "download_button": "Download PDF",
+    "send_email_button": "Send PDF via Email",
+    "report_details": "Report Details",
+    "day": "Day",
+    "article": "Article",
+    "hours": "Hours",
+    "from": "From",
+    "to": "To",
+    "status": "Status",
+    "pdf_downloaded": "PDF downloaded!",
+    "pdf_ready_console": "PDF is ready to send via email (check console)"
+  }
 }
+
+
+

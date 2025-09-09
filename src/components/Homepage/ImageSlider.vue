@@ -1,6 +1,7 @@
 <template>
   <section class="bg-[#f3f4f6] p-1 mobile-box">
-    <div class="relative overflow-hidden rounded-xl shadow-lg my-10  mx-4">
+    <div class="relative overflow-hidden rounded-xl shadow-lg my-10 mb-6 mx-4">
+      <!-- Slides -->
       <div
         class="flex transition-transform duration-500"
         :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
@@ -17,10 +18,12 @@
           />
         </div>
       </div>
+
+      <!-- Indicators -->
     </div>
-    <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+    <div class="flex justify-center gap-2 mb-5">
       <span
-        v-for="(index) in images"
+        v-for="(image, index) in images"
         :key="index"
         :class="{
           'w-3 h-3 rounded-full transition-colors duration-300': true,
@@ -31,6 +34,7 @@
     </div>
   </section>
 </template>
+
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';

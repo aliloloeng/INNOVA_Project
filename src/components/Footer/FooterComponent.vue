@@ -1,5 +1,5 @@
 <template>
-  <nav class="card-bg pb-6 mobile-box text-xs">
+  <nav class="card-bg pb-5 mobile-box text-xs">
     <ul class="flex font-bold w-full ">
       <li class="flex-1 w-full flex justify-center">
         <button class=" w-full p-5 px-2 "

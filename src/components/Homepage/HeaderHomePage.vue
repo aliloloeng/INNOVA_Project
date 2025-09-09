@@ -1,5 +1,5 @@
 <template>
-  <header class="card-bg px-4 pb-3 pt-8 drop-shadow-md center-flex mobile-box">
+  <header class="card-bg px-4 pb-3 pt-6 drop-shadow-md center-flex mobile-box">
     <div class="flex justify-between items-center w-full">
       <div>
         <img

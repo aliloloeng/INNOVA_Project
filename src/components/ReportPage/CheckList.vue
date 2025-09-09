@@ -10,36 +10,51 @@
 
     <Form ref="formRef" @submit.prevent="onSubmit" class="flex-1 space-y-4">
 
-      <div class="flex flex-col mb-4">
-        <label class="text-gray-700 font-semibold mb-1">{{ $t("your_input") }}</label>
-        <textarea
-          v-model="userInput"
-          :placeholder="$t('your_input_placeholder')"
-          class="border w-full border-gray-300 bg-gray-100 rounded-lg px-3 py-2 focus:outline-none"
-          rows="3"
-        ></textarea>
-      </div>
-
-      <div class="flex gap-2 mb-4">
+      <!-- دکمه انتخاب AI -->
+      <div class="flex justify-end mb-4">
         <button
           type="button"
-          @click="sendToAI"
-          class="flex bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-500"
+          @click="useAI = !useAI"
+          class="bg-purple-600 text-white w-full py-2 rounded-full hover:bg-purple-500 transition"
         >
-          {{ $t("send_to_ai") }}
+          {{ useAI ? $t("show_less") : $t("send_to_ai") }}
         </button>
       </div>
 
-      <div class="mt-6 flex flex-col">
-        <span class="text-xl font-semibold text-gray-700 mb-2">{{ $t("ai_result") }}</span>
-        <textarea
-          v-model="aiResult"
-          class="border w-full border-gray-300 bg-gray-100 rounded-lg px-3 py-2 focus:outline-none resize-none"
-          rows="6"
-        ></textarea>
+      <!-- بخش AI فقط وقتی useAI = true باشه نمایش داده میشه -->
+      <div v-if="useAI">
+        <div class="flex flex-col mb-4">
+          <label class="text-gray-700 font-semibold mb-1">{{ $t("your_input") }}</label>
+          <textarea
+            v-model="userInput"
+            :placeholder="$t('your_input_placeholder')"
+            class="border w-full border-gray-300 bg-gray-100 rounded-lg px-3 py-2 focus:outline-none"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="flex gap-2 mb-4">
+          <button
+            type="button"
+            @click="sendToAI"
+            class="flex bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-500"
+          >
+            {{ $t("send_to_ai") }}
+          </button>
+        </div>
+
+        <div class="mt-6 flex flex-col ">
+          <span class="text-xl font-semibold text-gray-700 mb-2">{{ $t("ai_result") }}</span>
+          <textarea
+            v-model="aiResult"
+            class="border w-full border-gray-300 bg-gray-100 rounded-lg px-3 py-2 focus:outline-none resize-none mb-4"
+            rows="6"
+          ></textarea>
+        </div>
       </div>
 
-      <div v-for="(item, index) in reportStore.checklist" :key="index" class="flex flex-col pb-4 mt-4">
+      <!-- آیتم‌های چک لیست -->
+      <div v-for="(item, index) in reportStore.checklist" :key="index" class="flex flex-col pb-4 mt-8">
         <span class="text-xl font-semibold text-gray-700 my-2">
           {{ $t("item") }} {{ index + 1 }}
         </span>
@@ -74,16 +89,16 @@ import { required } from '@vee-validate/rules'
 import IconCheck from './icons/IconCheck.vue'
 import IconPlus from './icons/IconPlus.vue'
 import { useReportStore } from '@/store/reportStore'
-import { useI18n } from 'vue-i18n'   // 📌 اضافه کردن
+import { useI18n } from 'vue-i18n'
 
 defineRule('required', required)
 
 const reportStore = useReportStore()
 const userInput = ref('')
 const aiResult = ref('')
+const useAI = ref(false) // 👈 کنترل نمایش بخش AI
 
-// useI18n hook
-const { t } = useI18n()  // 📌 حالا t() در script setup قابل استفاده است
+const { t } = useI18n()
 
 if (reportStore.checklist.length === 0) {
   reportStore.checklist.push('')
@@ -95,7 +110,6 @@ function addItem() {
 
 async function sendToAI() {
   const inputText = userInput.value + "\n" + reportStore.checklist.join('\n')
-
   const fallbackChecklist = [...t("fallback_checklist")]
 
   try {

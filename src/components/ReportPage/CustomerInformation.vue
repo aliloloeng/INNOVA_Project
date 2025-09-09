@@ -4,17 +4,16 @@
       <div class="bg-blue-200 p-2 rounded-xl w-10">
         <IconCustomerEng class="w-full h-auto"/>
       </div>
-      <h2 class="text-xl font-bold">{{ $t('customerInformation') }}</h2>
+      <h2 class="text-xl font-bold">{{ $t('Customer_Information') }}</h2>
     </div>
 
     <Form ref="formRef" @submit="onSubmit" class="flex-1 space-y-4">
 
       <div class="flex gap-4">
         <div class="flex flex-col">
-          <span class="text-lg font-semibold text-gray-700 my-2">{{ $t('fullName') }}</span>
+          <span class="text-lg font-semibold text-gray-700 my-2">{{ $t('full_name') }}</span>
           <Field
             v-model="reportStore.customer.name"
-            :placeholder="$t('customerNamePlaceholder')"
             name="name"
             rules="required"
             class="border w-full border-gray-300 bg-gray-100 rounded-lg px-3 py-2 focus:outline-none "
@@ -23,10 +22,9 @@
         </div>
 
         <div class="flex flex-col">
-          <span class="text-lg font-semibold text-gray-700 my-2">{{ $t('nationalId') }}</span>
+          <span class="text-lg font-semibold text-gray-700 my-2">{{ $t('national_id') }}</span>
           <Field
             v-model="reportStore.customer.nationalId"
-            :placeholder="$t('nationalIdPlaceholder')"
             name="nationalId"
             rules="required|numeric|length:10"
             class="border w-full border-gray-300 bg-gray-100 rounded-lg px-3 py-2 focus:outline-none "
@@ -40,7 +38,6 @@
           <span class="text-lg font-semibold text-gray-700 my-2">{{ $t('email') }}</span>
           <Field
             v-model="reportStore.customer.email"
-            :placeholder="$t('emailPlaceholder')"
             name="email"
             rules="required|email"
             class="border w-full border-gray-300 bg-gray-100 rounded-lg px-3 py-2 focus:outline-none "
@@ -52,7 +49,6 @@
           <span class="text-lg font-semibold text-gray-700 my-2">{{ $t('phone') }}</span>
           <Field
             v-model="reportStore.customer.phone"
-            :placeholder="$t('phonePlaceholder')"
             name="phone"
             rules="phone"
             class="border w-full border-gray-300 bg-gray-100 rounded-lg px-3 py-2 focus:outline-none "
@@ -65,7 +61,6 @@
         <span class="text-lg font-semibold text-gray-700 my-2">{{ $t('address') }}</span>
         <Field
           v-model="reportStore.customer.address"
-          :placeholder="$t('addressPlaceholder')"
           name="address"
           rules="required"
           class="border w-full border-gray-300 bg-gray-100 rounded-lg px-3 pb-14 pt-2 focus:outline-none "
@@ -76,6 +71,7 @@
     </Form>
   </div>
 </template>
+
 
 <script setup>
 import { Form, Field, ErrorMessage, defineRule } from 'vee-validate'
@@ -109,6 +105,7 @@ if (!reportStore.customer) {
 }
 
 function onSubmit() {
-  alert(t('formSubmittedAlert') + JSON.stringify(reportStore.customer, null, 2))
+  console.log(t('customer_info_submitted_alert') + JSON.stringify(reportStore.customer, null, 2))
 }
+
 </script>

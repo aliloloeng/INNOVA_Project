@@ -1,6 +1,6 @@
 <template>
-  <header class="bg-white mobile-box  text-gray-700 font-semibold px-4 py-3 flex justify-between items-center shadow-md relative z-50">
-    <RouterLink to="/part">
+  <header class="bg-white mobile-box  text-gray-700 font-semibold pt-6 px-4 py-3 flex justify-between items-center shadow-md relative z-50">
+    <RouterLink to="/shop">
       <IconArrow class="w-6 h-6"/>
     </RouterLink>
 
@@ -31,11 +31,6 @@
       <li>
         <RouterLink to="/machines" class="block hover:text-blue-500 transition">
           {{ $t('machines') }}
-        </RouterLink>
-      </li>
-      <li>
-        <RouterLink to="/about" class="block hover:text-blue-500 transition">
-          {{ $t('about') }}
         </RouterLink>
       </li>
     </ul>
