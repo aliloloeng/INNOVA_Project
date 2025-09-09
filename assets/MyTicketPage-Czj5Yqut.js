@@ -1,0 +1,1 @@
+import{_ as e}from"./TicketsComponent-BoxXWndg.js";import{c as a,o as t,d as c}from"./index-COMG4az-.js";const m={__name:"MyTicketPage",setup(o){return(r,_)=>(t(),a("div",null,[c(e)]))}};export{m as default};

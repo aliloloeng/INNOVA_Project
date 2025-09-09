@@ -1,0 +1,1 @@
+import{_ as e}from"./TicketsComponent-BoxXWndg.js";import{c as a,o,d as r}from"./index-COMG4az-.js";const n={__name:"massageAdminPage",setup(s){return(t,c)=>(o(),a("div",null,[r(e)]))}};export{n as default};
