@@ -9,7 +9,7 @@
           alt="User Avatar"
           :class="[
             'rounded-full border-2 border-blue-600 object-cover aspect-square cursor-pointer',
-            locale === 'it' ? 'w-35' : 'w-35'
+            locale === 'it' ? 'w-36' : 'w-35'
           ]"
           @click="triggerFileInput"
         />

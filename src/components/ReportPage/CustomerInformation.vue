@@ -9,9 +9,9 @@
 
     <Form ref="formRef" @submit="onSubmit" class="flex-1 space-y-4">
 
-      <div class="flex gap-4">
-        <div class="flex flex-col">
-          <span class="text-lg font-semibold text-gray-700 my-2">{{ $t('full_name') }}</span>
+      <div class="flex flex-wrap gap-4">
+        <div class="flex flex-col flex-1 min-w-[200px]">
+          <span class="text-lg font-semibold text-gray-700 my-2 truncate">{{ $t('full_name') }}</span>
           <Field
             v-model="reportStore.customer.name"
             name="name"
@@ -21,8 +21,8 @@
           <ErrorMessage class="text-red-500 text-xs mt-1" name="name" />
         </div>
 
-        <div class="flex flex-col">
-          <span class="text-lg font-semibold text-gray-700 my-2">{{ $t('national_id') }}</span>
+        <div class="flex flex-col flex-1 min-w-[200px]">
+          <span class="text-lg font-semibold text-gray-700 my-2 truncate">{{ $t('national_id') }}</span>
           <Field
             v-model="reportStore.customer.nationalId"
             name="nationalId"

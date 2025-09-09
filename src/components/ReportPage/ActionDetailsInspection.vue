@@ -102,7 +102,9 @@
           <div>
             <label class="text-gray-700 font-medium">{{ $t('action_details.duration') }}</label>
             <div class="flex items-center justify-center gap-2 w-full mt-4">
-              <div class="flex items-center w-1/2 ">
+
+              <!-- Start Hour -->
+              <div class="flex items-center w-1/2">
                 <input
                   type="number"
                   min="0"
@@ -118,6 +120,7 @@
                 <span class="text-gray-700">{{ $t('action_details.until') }}</span>
               </div>
 
+              <!-- End Hour -->
               <div class="flex items-center w-1/2">
                 <input
                   type="number"
@@ -129,8 +132,10 @@
                   @input="validateHour(action, 'endHour')"
                 />
               </div>
+
             </div>
           </div>
+
         </div>
 
         <!-- وضعیت -->
@@ -191,15 +196,6 @@ function addAction() {
   })
 }
 
-function validateHour(action, field) {
-  if (action[field] > 24) {
-    action[field] = 24
-  }
-  if (action[field] < 0) {
-    action[field] = 0
-  }
-}
-
 function removeAction(index) {
   reportStore.actionDetails.splice(index, 1)
 }
@@ -219,4 +215,26 @@ function removeImage(actionIndex, imageIndex) {
 function onSubmit() {
   console.log('Form Submitted:', reportStore.actionDetails)
 }
+function validateHour(action, field) {
+    if (action[field] > 24) {
+    action[field] = 24
+  }
+  if (action[field] < 0) {
+    action[field] = 0
+  }
+  // محدودیت 0 تا 24
+  if (action[field] > 24) action[field] = 24
+  if (action[field] < 0) action[field] = 0
+
+  // اطمینان از اینکه endHour کمتر از startHour نباشه
+  if (field === 'endHour' && action.startHour != null && action.endHour < action.startHour) {
+    action.endHour = action.startHour
+  }
+
+  // اطمینان از اینکه startHour بیشتر از endHour نباشه
+  if (field === 'startHour' && action.endHour != null && action.startHour > action.endHour) {
+    action.startHour = action.endHour
+  }
+}
+
 </script>

@@ -21,6 +21,9 @@
           <IconSend/> Submit Report
         </button>
       </div>
+
+      <PdfActions :reportData="reportStore.actionDetails" />
+
     </div>
   </section>
 </template>
@@ -35,11 +38,12 @@ import SpareParts from '@/components/ReportPage/SpareParts.vue'
 import SignaturesPart from '@/components/ReportPage/SignaturesPart.vue'
 import ActionDetailsInspection from '@/components/ReportPage/ActionDetailsInspection.vue'
 import GetDate from '@/components/ReportPage/GetDate.vue'
+import PdfActions from '@/components/ReportPage/PdfActions.vue'
 
 
 const reportStore = useReportStore()
 
 function submitReport() {
-  alert("Report Submitted:\n" + JSON.stringify(reportStore.$state, null, 2))
+  console.log("Report Submitted:\n" + JSON.stringify(reportStore.$state, null, 2))
 }
 </script>

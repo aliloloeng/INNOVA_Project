@@ -4,14 +4,14 @@
 
     <button
       @click="downloadPdf"
-      class=" py-2 bg-green-700 text-white rounded hover:bg-green-600 w-full"
+      class="py-2 bg-green-700 text-white rounded hover:bg-green-600 w-full"
     >
       {{ $t('pdf_actions.download_button') }}
     </button>
 
     <button
       @click="sendPdfEmail"
-      class=" py-2 bg-blue-700 text-white rounded hover:bg-blue-600 w-full"
+      class="py-2 bg-blue-700 text-white rounded hover:bg-blue-600 w-full"
     >
       {{ $t('pdf_actions.send_email_button') }}
     </button>
@@ -34,7 +34,7 @@ function generatePdf() {
   doc.text("Bericht Details", 10, 10)
 
   props.reportData.forEach((action, index) => {
-    const y = 20 + index * 20
+    const y = 20 + index * 30
     doc.text(`${index + 1}. Tag: ${action.dayOfWeek || '-'}`, 10, y)
     doc.text(`Artikel: ${action.remark || '-'}`, 10, y + 6)
     doc.text(`Stunden: ${action.hour || '-'}`, 10, y + 12)
@@ -47,7 +47,7 @@ function generatePdf() {
 
 function downloadPdf() {
   const doc = generatePdf()
-  doc.save('report.pdf')
+  doc.save('report.pdf') // این فایل را مستقیم روی سیستم دانلود می‌کند
 }
 
 function sendPdfEmail() {
@@ -57,7 +57,7 @@ function sendPdfEmail() {
   const fileReader = new FileReader()
   fileReader.onload = function () {
     const base64 = fileReader.result.split(',')[1]
-    console.log('PDF Base64:', base64)
+    console.log('PDF Base64:', base64) // این base64 آماده ارسال ایمیل است
   }
   fileReader.readAsDataURL(pdfBlob)
 }
